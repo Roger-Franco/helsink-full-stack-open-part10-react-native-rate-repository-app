@@ -33,3 +33,7 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+
+src/components/BodyMassIndexCalculator.jsx
+src/components/WhatIsMyPlatform.jsx

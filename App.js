@@ -1,20 +1,29 @@
+import AppBar from './src/components/AppBar';
+import FlexboxExample from './src/components/FlexboxExample';
+import Main from './src/components/Main';
+import StyleTest from './src/components/StyleTest';
+import StyleTest2 from './src/components/StyleTest2';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { NativeRouter } from 'react-router-native';
 
 export default function App() {
+  // return (
+  //   <>
+  //     <StyleTest />
+  //     <StyleTest2 />
+  //     <FlexboxExample />
+  //   </>
+  // )
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app! Hello World!!</Text>
+    <>
+      {/* <AppBar /> */}
+      <NativeRouter>
+        <Main />
+      </NativeRouter>
       <StatusBar style="auto" />
-    </View>
-  );
+    </>
+  )
+
+
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
