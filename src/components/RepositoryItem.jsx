@@ -1,6 +1,8 @@
 import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 import theme from '../theme';
 
+import { useNavigate } from 'react-router-native';
+
 const styles = StyleSheet.create({
   separator: {
     height: 10,
@@ -43,6 +45,8 @@ const formatNumbers = (number) => {
 
 const RepositoryItem = ({ item }) => {
   return (
+    <Pressable onPress={() => { {item.id && navigate(`/repository/${item.id}`)} }}>
+      <View testID="repositoryItem">
     <View style={styles.container}>
       {/* <Text>BLAH</Text> */}
       {/* <Text>{item.id}</Text> */}
@@ -76,6 +80,8 @@ const RepositoryItem = ({ item }) => {
         </View>
       </View>
     </View>
+    </View>
+    </Pressable>
   );
 }
 

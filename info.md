@@ -40,3 +40,17 @@ npm install react-router-native
 npm install formik --save
 
 npm install yup
+
+npm install @apollo/client graphql
+
+npm install @expo/metro-config@0.17.4
+
+npm install dotenv
+
+npx expo install @react-native-async-storage/async-storage
+
+npm install --save-dev jest jest-expo eslint-plugin-jest
+
+npm install --save-dev --legacy-peer-deps react-test-renderer@18.2.0 @testing-library/react-native @testing-library/jest-native
+
+npm install expo-linking --legacy-peer-deps

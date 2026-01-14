@@ -23,6 +23,8 @@ export default defineConfig([{
         "react-native": reactNative,
     },
 
+    "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:jest/recommended"],
+
     languageOptions: {
         globals: {
             ...reactNative.environments["react-native"]["react-native"],
